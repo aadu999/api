@@ -4,7 +4,7 @@ const connectDB = require("./config/db")
 const User = require("./model/user")
 connectDB()
 
-const PORT = 3020
+const PORT = process.env.PORT || 3020
 const app = express()
 
 app.use(express.json())
